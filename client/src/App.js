@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Pusher from 'pusher-js';
 
 const client = new ApolloClient({
-    uri : "ancient-gorge-15218.herokuapp.com"
+    uri : "https://ancient-gorge-15218.herokuapp.com/graphql"
 });
 
 registerServiceWorker();
