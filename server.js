@@ -1,9 +1,9 @@
 let express = require("express");
+let path = require('path');
 let graphqlHTTP = require("express-graphql");
 let { buildSchema } = require("graphql");
 let cors = require("cors");
 //let Pusher = require("pusher");
-let path = require('path');
 let Pusher = require("pusher");
 let bodyParser = require("body-parser");
 let Multipart = require("connect-multiparty");
