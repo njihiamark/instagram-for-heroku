@@ -6,6 +6,7 @@ let cors = require("cors");
 let Pusher = require("pusher");
 let bodyParser = require("body-parser");
 let Multipart = require("connect-multiparty");
+let path = require('path');
 //let Multipart = require("connect-multiparty");
 
 // Construct a schema, using GraphQL schema language

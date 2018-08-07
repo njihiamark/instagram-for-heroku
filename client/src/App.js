@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Pusher from 'pusher-js';
 
 const client = new ApolloClient({
-    uri : "limitless-springs-24280.herokuapp.com"
+    uri : "ancient-gorge-15218.herokuapp.com"
 });
 
 registerServiceWorker();
