@@ -99,6 +99,10 @@ app.use(bodyParser.json());
 
 let multipartMiddleware = new Multipart();
 
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 app.use(
   "/graphql",
   graphqlHTTP({
@@ -108,8 +112,7 @@ app.use(
   })
 );
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 // trigger add a new post
 app.post('/newpost', multipartMiddleware, (req,res) => {
