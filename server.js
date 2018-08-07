@@ -3,10 +3,11 @@ let graphqlHTTP = require("express-graphql");
 let { buildSchema } = require("graphql");
 let cors = require("cors");
 //let Pusher = require("pusher");
+let path = require('path');
 let Pusher = require("pusher");
 let bodyParser = require("body-parser");
 let Multipart = require("connect-multiparty");
-let path = require('path');
+
 //let Multipart = require("connect-multiparty");
 
 // Construct a schema, using GraphQL schema language
